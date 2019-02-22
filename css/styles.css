@@ -1,6 +1,6 @@
 /**
- * GitHub Corners, page css
- * Author: Tim Holman
+ * GitLab Corners, page css
+ * Author: Bryce Dorn
  */
 
 * {
@@ -15,34 +15,71 @@ html, body {
 
 .github-corner {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -20px;
+    right: -80px;
     transform: rotate(45deg);
-    background: black;
-    box-shadow: 0 -3.4rem 0 3.4rem black;
+    background: #548;
+    border: #548 solid 72px;
+    border-bottom: none;
+    border-top: #548 solid 20px;
 }
 
 .github-corner svg {
-    animation: none;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 
-.github-corner:hover svg {
-    animation: bounce 300ms ease-in;
+.cls-1{ fill:#fc6d26; }
+.cls-2{ fill:#e24329; }
+.cls-3{ fill:#fca326; }
+
+.github-corner:hover .cls-1 {
+    animation: cycle 1000ms;
 }
 
-@keyframes bounce {
-    40% {
-        transform: scale(1.15);
-    }
-    50% {
-        transform: scale(1.25);
-    }
-    80% {
-        transform: scale(0.9);
-    }
-    100% {
-        transform: scale(1);
-    }
+.github-corner:hover .cls-2 {
+    animation: cycleMid 1000ms;
+}
+
+.github-corner:hover .cls-3 {
+    animation: cycleEnd 1000ms;
+}
+
+@keyframes cycle {
+    10% { fill:#fc6d26; }
+    20% { fill:#e24329; }
+    30% { fill:#fca326; }
+    40% { fill:#fc6d26; }
+    50% { fill:#e24329; }
+    60% { fill:#fca326; }
+    70% { fill:#fc6d26; }
+    80% { fill:#e24329; }
+    90% { fill:#fca326; }
+    100% { fill:#fc6d26; }
+}
+
+@keyframes cycleMid {
+    10% { fill:#e24329; }
+    20% { fill:#fca326; }
+    30% { fill:#fc6d26; }
+    40% { fill:#e24329; }
+    50% { fill:#fca326; }
+    60% { fill:#fc6d26; }
+    70% { fill:#e24329; }
+    80% { fill:#fca326; }
+    90% { fill:#fc6d26; }
+    100% { fill:#e24329; }
+}
+
+@keyframes cycleEnd {
+    10% { fill:#fca326; }
+    20% { fill:#fc6d26; }
+    30% { fill:#e24329; }
+    40% { fill:#fca326; }
+    50% { fill:#fc6d26; }
+    60% { fill:#e24329; }
+    70% { fill:#fca326; }
+    80% { fill:#fc6d26; }
+    90% { fill:#e24329; }
+    100% { fill:#fca326; }
 }

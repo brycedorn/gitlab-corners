@@ -1,0 +1,48 @@
+/**
+ * GitHub Corners, page css
+ * Author: Tim Holman
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #fff;
+    margin: 0px;
+}
+
+.github-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
+    background: black;
+    box-shadow: 0 -3.4rem 0 3.4rem black;
+}
+
+.github-corner svg {
+    animation: none;
+    width: 70px;
+    height: 70px;
+}
+
+.github-corner:hover svg {
+    animation: bounce 300ms ease-in;
+}
+
+@keyframes bounce {
+    40% {
+        transform: scale(1.15);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    80% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

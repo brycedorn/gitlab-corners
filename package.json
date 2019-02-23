@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel": "^1.11.0"
+  },
+  "scripts": {
+    "build": "parcel build index.html --out-dir public",
+    "start": "parcel index.html"
+  },
+  "name": "gitlab-corners",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:brycedorn/gitlab-corners.git",
+  "author": "Bryce Dorn <brycedorn@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "clipboard": "^2.0.4"
+  }
+}

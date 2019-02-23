@@ -1,12 +1,3 @@
-/**
- * GitLab Corners, page css
- * Author: Bryce Dorn
- */
-
-* {
-    box-sizing: border-box;
-}
-
 html, body {
     font-family: 'Source Sans Pro', Arial, sans-serif;
     margin: 0px;
@@ -15,12 +6,14 @@ html, body {
 footer {
     display: flex;
     justify-content: center;
+    font-weight: 300;
     margin: 50px 0 20px 0;
 }
 
-footer a {
+footer a, p a {
     text-decoration: none;
     color: #548;
+    font-weight: 500;
     white-space: pre;
 }
 
@@ -193,12 +186,13 @@ footer a {
 h1 {
     margin-top: 80px;
     font-size: 3em;
+    text-align: center;
 }
 
-.description {
+p {
     max-width: 600px;
     margin: 20px auto;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 300;
 }
 

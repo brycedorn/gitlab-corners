@@ -19,8 +19,8 @@ footer a, p a {
 
 .gitlab-corner-wrapper {
     overflow: hidden;
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 0;
     right: 0;
@@ -28,18 +28,19 @@ footer a, p a {
 
 .gitlab-corner {
     position: absolute;
-    top: -20px;
-    right: -80px;
+    top: -12px;
+    right: -50px;
     transform: rotate(45deg);
     background: #548;
-    border: #548 solid 72px;
+    border: #548 solid 44px;
     border-bottom: none;
-    border-top: #548 solid 20px;
+    border-top: #548 solid 16px;
 }
 
 .gitlab-corner svg {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: -10px;
 }
 
 .cls-1 { fill:#fc6d26; }
@@ -201,7 +202,7 @@ p {
     justify-content: space-between;
     margin-top: 40px;
     position: relative;
-    height: 160px;
+    height: 130px;
     width: 100%;
     overflow: hidden;
     background: #fafafa;
@@ -211,16 +212,16 @@ p {
 
 .grey-orange .gitlab-corner {
     background: #fc6d26;
-    border: #fc6d26 solid 72px;
+    border: #fc6d26 solid 40px;
     border-bottom: none;
-    border-top: #fc6d26 solid 20px;
+    border-top: #fc6d26 solid 14px;
 }
 
 .black .gitlab-corner {
     background: #333;
-    border: #333 solid 72px;
+    border: #333 solid 40px;
     border-bottom: none;
-    border-top: #333 solid 20px;
+    border-top: #333 solid 14px;
 }
 
 .demo .name {

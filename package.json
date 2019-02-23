@@ -5,7 +5,7 @@
   },
   "scripts": {
     "build": "parcel build index.html --out-dir public",
-    "start": "parcel index.html"
+    "start": "parcel index.html --open --out-dir public"
   },
   "name": "gitlab-corners",
   "version": "1.0.0",

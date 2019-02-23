@@ -8,12 +8,32 @@
 }
 
 html, body {
-    font-family: Helvetica, Arial, sans-serif;
-    background: #fff;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
     margin: 0px;
 }
 
-.github-corner {
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #548;
+    white-space: pre;
+}
+
+.gitlab-corner-wrapper {
+    overflow: hidden;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.gitlab-corner {
     position: absolute;
     top: -20px;
     right: -80px;
@@ -24,62 +44,247 @@ html, body {
     border-top: #548 solid 20px;
 }
 
-.github-corner svg {
+.gitlab-corner svg {
     width: 80px;
     height: 80px;
 }
 
-.cls-1{ fill:#fc6d26; }
-.cls-2{ fill:#e24329; }
-.cls-3{ fill:#fca326; }
+.cls-1 { fill:#fc6d26; }
+.cls-2 { fill:#e24329; }
+.cls-3 { fill:#fca326; }
 
-.github-corner:hover .cls-1 {
-    animation: cycle 1000ms;
+.gitlab-corner:hover .cls-1 {
+    animation: cycle 600ms;
 }
 
-.github-corner:hover .cls-2 {
-    animation: cycleMid 1000ms;
+.gitlab-corner:hover .cls-2 {
+    animation: cycleMid 600ms;
 }
 
-.github-corner:hover .cls-3 {
-    animation: cycleEnd 1000ms;
+.gitlab-corner:hover .cls-3 {
+    animation: cycleEnd 600ms;
 }
 
 @keyframes cycle {
-    10% { fill:#fc6d26; }
-    20% { fill:#e24329; }
-    30% { fill:#fca326; }
-    40% { fill:#fc6d26; }
-    50% { fill:#e24329; }
-    60% { fill:#fca326; }
-    70% { fill:#fc6d26; }
-    80% { fill:#e24329; }
+    15% { fill:#fc6d26; }
+    30% { fill:#e24329; }
+    45% { fill:#fca326; }
+    60% { fill:#fc6d26; }
+    75% { fill:#e24329; }
     90% { fill:#fca326; }
     100% { fill:#fc6d26; }
 }
 
 @keyframes cycleMid {
-    10% { fill:#e24329; }
-    20% { fill:#fca326; }
-    30% { fill:#fc6d26; }
-    40% { fill:#e24329; }
-    50% { fill:#fca326; }
-    60% { fill:#fc6d26; }
-    70% { fill:#e24329; }
-    80% { fill:#fca326; }
+    15% { fill:#e24329; }
+    30% { fill:#fca326; }
+    45% { fill:#fc6d26; }
+    60% { fill:#e24329; }
+    75% { fill:#fca326; }
     90% { fill:#fc6d26; }
     100% { fill:#e24329; }
 }
 
 @keyframes cycleEnd {
-    10% { fill:#fca326; }
-    20% { fill:#fc6d26; }
-    30% { fill:#e24329; }
-    40% { fill:#fca326; }
-    50% { fill:#fc6d26; }
-    60% { fill:#e24329; }
-    70% { fill:#fca326; }
-    80% { fill:#fc6d26; }
+    15% { fill:#fca326; }
+    30% { fill:#fc6d26; }
+    45% { fill:#e24329; }
+    60% { fill:#fca326; }
+    75% { fill:#fc6d26; }
     90% { fill:#e24329; }
     100% { fill:#fca326; }
+}
+
+.cls-g-1 { fill:#aaa; }
+.cls-g-2 { fill:#888; }
+.cls-g-3 { fill:#eee; }
+
+.gitlab-corner:hover .cls-g-1 {
+    animation: greyCycle 600ms;
+}
+
+.gitlab-corner:hover .cls-g-2 {
+    animation: greyCycleMid 600ms;
+}
+
+.gitlab-corner:hover .cls-g-3 {
+    animation: greyCycleEnd 600ms;
+}
+
+@keyframes greyCycle {
+    15% { fill:#eee; }
+    30% { fill:#888; }
+    45% { fill:#aaa; }
+    60% { fill:#eee; }
+    75% { fill:#888; }
+    90% { fill:#aaa; }
+    100% { fill:#eee; }
+}
+
+@keyframes greyCycleMid {
+    15% { fill:#888; }
+    30% { fill:#aaa; }
+    45% { fill:#eee; }
+    60% { fill:#888; }
+    75% { fill:#aaa; }
+    90% { fill:#eee; }
+    100% { fill:#888; }
+}
+
+@keyframes greyCycleEnd {
+    15% { fill:#aaa; }
+    30% { fill:#eee; }
+    45% { fill:#888; }
+    60% { fill:#aaa; }
+    75% { fill:#eee; }
+    90% { fill:#888; }
+    100% { fill:#aaa; }
+}
+
+@media (max-width: 500px) {
+    .gitlab-corner:hover .cls-1,
+    .gitlab-corner:hover .cls-2,
+    .gitlab-corner:hover .cls-3 {
+        animation: none;
+    }
+
+    .gitlab-corner .cls-1 {
+        animation: cycle 600ms;
+    }
+
+    .gitlab-corner .cls-2 {
+        animation: cycleMid 600ms;
+    }
+
+    .gitlab-corner .cls-3 {
+        animation: cycleEnd 600ms;
+    }
+
+    .gitlab-corner:hover .cls-g-1,
+    .gitlab-corner:hover .cls-g-2,
+    .gitlab-corner:hover .cls-g-3 {
+        animation: none;
+    }
+
+    .gitlab-corner .cls-g-1 {
+        animation: greyCycle 600ms;
+    }
+
+    .gitlab-corner .cls-g-2 {
+        animation: greyCycleMid 600ms;
+    }
+
+    .gitlab-corner .cls-g-3 {
+        animation: greyCycleEnd 600ms;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 600px;
+}
+
+h1 {
+    margin-top: 80px;
+    font-size: 3em;
+}
+
+.description {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.demo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    position: relative;
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px 0 8px 8px;
+}
+
+.grey-orange .gitlab-corner {
+    background: #fc6d26;
+    border: #fc6d26 solid 72px;
+    border-bottom: none;
+    border-top: #fc6d26 solid 20px;
+}
+
+.black .gitlab-corner {
+    background: #333;
+    border: #333 solid 72px;
+    border-bottom: none;
+    border-top: #333 solid 20px;
+}
+
+.demo .name {
+    font-size: 1.2em;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    background: #fafafa !important;
+}
+
+.copy button {
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #2e2e2e;
+    border: #e5e5e5 solid 1px;
+    background: #fff;
+    padding: 6px 10px;
+    width: max-content;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    transition: background-color 100ms linear, border-color 100ms linear, color 100ms linear, box-shadow 100ms linear;
+}
+
+.copy button:hover {
+    background-color: #f0f0f0;
+    border-color: #e3e3e3;
+    color: #2e2e2e;
+}
+
+.copy button:active {
+    background-color: #eaeaea;
+}
+
+.copy button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+    outline: 0;
+}
+
+.copy-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.demo .code {
+    width: 100%;
+    height: 70%;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    color: #444;
+}
+
+.demo .copy:active {
+    background: #ccc;
 }

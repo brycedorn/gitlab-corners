@@ -40,7 +40,7 @@ footer a, p a {
 .gitlab-corner svg {
     width: 60px;
     height: 60px;
-    margin-bottom: -10px;
+    margin-bottom: -4px;
 }
 
 .cls-1 { fill:#fc6d26; }
@@ -290,6 +290,13 @@ p {
     background: #fafafa;
     border: 1px solid #e5e5e5;
     border-radius: 8px 0 8px 8px;
+}
+
+.purple .gitlab-corner {
+    background: #548;
+    border: #548 solid 40px;
+    border-bottom: none;
+    border-top: #548 solid 14px;
 }
 
 .grey-orange .gitlab-corner {

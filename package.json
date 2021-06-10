@@ -5,6 +5,7 @@
   },
   "scripts": {
     "build": "parcel build index.html --out-dir public",
+    "build-github": "parcel build index.html --out-dir public --public-url https://bryce.io/gitlab-corners",
     "start": "parcel index.html --open --out-dir public"
   },
   "name": "gitlab-corners",

@@ -1,3 +1,3 @@
 # GitLab Corners
 
-[gitlab-corners.bryce.io](https://gitlab-corners.bryce.io)
+[bryce.io/gitlab-corners](https://bryce.io/gitlab-corners)

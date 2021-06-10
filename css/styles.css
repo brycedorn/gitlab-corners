@@ -28,19 +28,19 @@ footer a, p a {
 
 .gitlab-corner {
     position: absolute;
-    top: -12px;
+    top: -16px;
     right: -50px;
     transform: rotate(45deg);
-    background: #548;
-    border: #548 solid 44px;
+    background: #eee;
+    border: #eee solid 44px;
     border-bottom: none;
-    border-top: #548 solid 16px;
+    border-top: #eee solid 16px;
 }
 
 .gitlab-corner svg {
     width: 60px;
     height: 60px;
-    margin-bottom: -10px;
+    margin-bottom: -4px;
 }
 
 .cls-1 { fill:#fc6d26; }
@@ -135,6 +135,87 @@ footer a, p a {
     100% { fill:#aaa; }
 }
 
+.cls-r-1 { fill:rgb(221,31,38); }
+.cls-r-2 { fill:rgb(243,110,56); }
+.cls-r-3 { fill:rgb(255,128,22); }
+.cls-r-4 { fill:rgb(0,145,71); }
+.cls-r-5 { fill:rgb(46,53,142); }
+.cls-r-6 { fill:rgb(103,47,143); }
+
+.gitlab-corner:hover .cls-r-1 {
+  animation: rainbowCycle1 600ms;
+}
+.gitlab-corner:hover .cls-r-2 {
+  animation: rainbowCycle2 600ms;
+}
+.gitlab-corner:hover .cls-r-3 {
+  animation: rainbowCycle3 600ms;
+}
+.gitlab-corner:hover .cls-r-4 {
+  animation: rainbowCycle4 600ms;
+}
+.gitlab-corner:hover .cls-r-5 {
+  animation: rainbowCycle5 600ms;
+}
+.gitlab-corner:hover .cls-r-6 {
+  animation: rainbowCycle6 600ms;
+}
+
+@keyframes rainbowCycle1 {
+    15% { fill:rgb(221,31,38); }
+    30% { fill:rgb(243,110,56); }
+    45% { fill:rgb(255,128,22); }
+    60% { fill:rgb(0,145,71); }
+    75% { fill:rgb(46,53,142); }
+    90% { fill:rgb(103,47,143); }
+    100% { fill:rgb(221,31,38); }
+}
+@keyframes rainbowCycle2 {
+  15% { fill:rgb(243,110,56); }
+  30% { fill:rgb(255,128,22); }
+  45% { fill:rgb(0,145,71); }
+  60% { fill:rgb(46,53,142); }
+  75% { fill:rgb(103,47,143); }
+  90% { fill: rgb(221,31,38); }
+  100% { fill:rgb(243,110,56); }
+}
+@keyframes rainbowCycle3 {
+  15% { fill: rgb(255,128,22); }
+  30% { fill: rgb(0,145,71); }
+  45% { fill: rgb(46,53,142); }
+  60% { fill: rgb(103,47,143); }
+  75% { fill: rgb(221,31,38); }
+  90% { fill: rgb(243,110,56); }
+  100% { fill: rgb(255,128,22); }
+}
+@keyframes rainbowCycle4 {
+  15% { fill: rgb(0,145,71); }
+  30% { fill: rgb(46,53,142); }
+  45% { fill: rgb(103,47,143); }
+  60% { fill: rgb(221,31,38); }
+  75% { fill: rgb(243,110,56); }
+  90% { fill:  rgb(255,128,22); }
+  100% { fill: rgb(0,145,71); }
+}
+@keyframes rainbowCycle5 {
+  15% { fill: rgb(46,53,142); }
+  30% { fill: rgb(103,47,143); }
+  45% { fill: rgb(221,31,38); }
+  60% { fill: rgb(243,110,56); }
+  75% { fill:  rgb(255,128,22);}
+  90% { fill:  rgb(0,145,71); }
+  100% { fill:  rgb(46,53,142); }
+}
+@keyframes rainbowCycle6{
+  15% { fill: rgb(103,47,143); }
+  30% { fill: rgb(221,31,38); }
+  45% { fill: rgb(243,110,56); }
+  60% { fill: rgb(255,128,22); }
+  75% { fill:  rgb(0,145,71); }
+  90% { fill:  rgb(46,53,142); }
+  100% { fill: rgb(103,47,143); }
+}
+
 @media (max-width: 500px) {
     .gitlab-corner:hover .cls-1,
     .gitlab-corner:hover .cls-2,
@@ -211,6 +292,13 @@ p {
     border-radius: 8px 0 8px 8px;
 }
 
+.purple .gitlab-corner {
+    background: #548;
+    border: #548 solid 40px;
+    border-bottom: none;
+    border-top: #548 solid 14px;
+}
+
 .grey-orange .gitlab-corner {
     background: #fc6d26;
     border: #fc6d26 solid 40px;
@@ -223,6 +311,20 @@ p {
     border: #333 solid 40px;
     border-bottom: none;
     border-top: #333 solid 14px;
+}
+
+.white .gitlab-corner {
+    background: #fff;
+    border: #fff solid 40px;
+    border-bottom: none;
+    border-top: #fff solid 14px;
+}
+
+.grey .gitlab-corner {
+    background: #eee;
+    border: #eee solid 40px;
+    border-bottom: none;
+    border-top: #eee solid 14px;
 }
 
 .demo .name {
@@ -283,4 +385,16 @@ p {
 
 .demo .copy:active {
     background: #ccc;
+}
+
+.alert {
+    background: rgba(85, 68, 136, 0.1);
+    border-bottom: #548 solid 2px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: -20px;
+    border-radius: 2px;
+    margin-top: 20px;
 }
